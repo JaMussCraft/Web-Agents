@@ -5,6 +5,7 @@ from agentlab.agents.generic_agent import AGENT_4o_MINI
 from agentlab.experiments.study import make_study
 
 print(AGENT_4o_MINI)
+quit()
 
 study = make_study(
     benchmark="miniwob",  # or "webarena", "workarena_l1" ...
