@@ -21,10 +21,11 @@ agent_args = [AGENT_4o_MINI]
 
 
 # ## select the benchmark to run on
-benchmark = "miniwob_tiny_test"
+# benchmark = "miniwob_tiny_test"
 # benchmark = "miniwob"
-# benchmark = "workarena_l1"
+benchmark = "workarena_l1"
 # benchmark = "workarena_l2"
+# benchmark = "workarena_l2_agent_curriculum_eval"
 # benchmark = "workarena_l3"
 # benchmark = "webarena"
 
@@ -38,7 +39,7 @@ reproducibility_mode = False
 relaunch = False
 
 ## Number of parallel jobs
-n_jobs = 4  # Make sure to use 1 job when debugging in VSCode
+n_jobs = 2  # Make sure to use 1 job when debugging in VSCode
 # n_jobs = -1  # to use all available cores
 
 
