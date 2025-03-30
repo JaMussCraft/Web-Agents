@@ -23,11 +23,12 @@ agent_args = [AGENT_4o_MINI]
 # ## select the benchmark to run on
 # benchmark = "miniwob_tiny_test"
 # benchmark = "miniwob"
-benchmark = "workarena_l1"
+# benchmark = "workarena_l1"
 # benchmark = "workarena_l2"
 # benchmark = "workarena_l2_agent_curriculum_eval"
 # benchmark = "workarena_l3"
 # benchmark = "webarena"
+benchmark = "weblinx"
 
 # Set reproducibility_mode = True for reproducibility
 # this will "ask" agents to be deterministic. Also, it will prevent you from launching if you have

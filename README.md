@@ -30,3 +30,12 @@ export SNOW_INSTANCE_URL=https://dev276413.service-now.com
 export SNOW_INSTANCE_UNAME=admin
 export SNOW_INSTANCE_PWD=JL%\!edhEm13W
 ```
+
+## WebLinx
+
+### Environment variables
+```bash
+export BROWSERGYM_WEBLINX_CACHE_DIR=./bg_wl_data
+```
+
+### Make sure project contains directory "bg_wl_data" with [this dataset](https://huggingface.co/datasets/McGill-NLP/weblinx-browsergym)
