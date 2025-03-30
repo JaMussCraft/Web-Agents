@@ -6,6 +6,8 @@ from agentlab.agents.generic_agent import (
     RANDOM_SEARCH_AGENT,
     AGENT_4o,
     AGENT_4o_MINI,
+    AGENT_4o_VISION,
+    AGENT_4o_MINI_VISION, 
     # AGENT_o3_MINI,
     # AGENT_o1_MINI,
     # AGENT_37_SONNET,
@@ -17,7 +19,9 @@ logging.getLogger().setLevel(logging.INFO)
 
 # choose your agent or provide a new agent
 agent_args = [AGENT_4o_MINI]
+# agent_args = [AGENT_4o_MINI_VISION]
 # agent_args = [AGENT_4o]
+# agent_args = [AGENT_4o_VISION]
 
 
 # ## select the benchmark to run on
@@ -27,8 +31,9 @@ agent_args = [AGENT_4o_MINI]
 # benchmark = "workarena_l2"
 # benchmark = "workarena_l2_agent_curriculum_eval"
 # benchmark = "workarena_l3"
-# benchmark = "webarena"
-benchmark = "weblinx"
+benchmark = "webarena"
+# benchmark = "weblinx"
+# benchmark = "assistantbench"
 
 # Set reproducibility_mode = True for reproducibility
 # this will "ask" agents to be deterministic. Also, it will prevent you from launching if you have
