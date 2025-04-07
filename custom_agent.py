@@ -1,5 +1,6 @@
-from browsergym.experiment.loop import AbstractActionSet, DEFAULT_ACTION_SET
+from browsergym.experiment.loop import AbstractActionSet, DEFAULT_ACTION_SET, AgentArgs
 from browsergym.experiment.agent import Agent
+from dataclasses import dataclass
 
 
 class CustomAgent(Agent):
@@ -26,3 +27,12 @@ class CustomAgent(Agent):
             "some_other_info": "webagents are great",
         }
         return action, info
+
+
+@dataclass
+class CustomAgentArgs(AgentArgs):
+    temperature: float = 0.5
+    custom_param: str = "default_value"
+
+    def make_agent(self) -> Agent:
+        return CustomAgent(self.custom_param, self.temperature)
