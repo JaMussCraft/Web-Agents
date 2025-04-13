@@ -7,7 +7,6 @@ export AGENTLAB_EXP_ROOT=./experiment-results
 export OPENAI_API_KEY=<your openai api key> # if openai models are used
 ```
 
-
 ## MiniWob
 
 ## WebArena
@@ -70,3 +69,19 @@ export BROWSERGYM_WEBLINX_CACHE_DIR=./bg_wl_data
 
 * AMI not available anymore... could try setting websites manually...
 * Haven't explored paper
+
+
+## Agent S2
+
+### Environment variables
+```bash
+export OPENAI_API_KEY=<YOUR_API_KEY>
+export ANTHROPIC_API_KEY=<YOUR_ANTHROPIC_API_KEY>
+export HF_TOKEN=<YOUR_HF_TOKEN>
+export PERPLEXICA_URL=http://localhost:32768/api/search
+```
+
+### Running CLI
+```bash
+python -m gui_agents.s2.cli_app --model claude-3-7-sonnet-20250219 --grounding_model claude-3-7-sonnet-20250219
+```
