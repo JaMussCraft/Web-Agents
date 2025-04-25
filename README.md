@@ -85,3 +85,8 @@ export PERPLEXICA_URL=http://localhost:32768/api/search
 ```bash
 python -m gui_agents.s2.cli_app --model claude-3-7-sonnet-20250219 --grounding_model claude-3-7-sonnet-20250219
 ```
+
+## CRMArena
+
+### Setup
+create .env file with API keys in it.
